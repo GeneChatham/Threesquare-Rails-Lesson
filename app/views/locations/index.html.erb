@@ -1,2 +1,15 @@
 <h1>Welcome to The Threesquare</h1>
 
+<ul>
+	<% @locations.each do |location| %>
+		<li>
+			<img src="<%=location.picture_url%>" height="100" width="100">
+			<%= link_to location.name, location %>:&nbsp
+			<%= location.snippet %>
+		</li>
+		<br>
+	<% end %>
+</ul>
+
+<%= link_to "New Location", new_location_path %>
+
