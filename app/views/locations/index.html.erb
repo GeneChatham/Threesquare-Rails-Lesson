@@ -1,5 +1,7 @@
 <h1>Welcome to The Threesquare</h1>
 
+<%= link_to "Add a New Location!", new_location_path %>
+
 <ul>
 	<% @locations.each do |location| %>
 		<li>
@@ -11,5 +13,5 @@
 	<% end %>
 </ul>
 
-<%= link_to "New Location", new_location_path %>
+
 
