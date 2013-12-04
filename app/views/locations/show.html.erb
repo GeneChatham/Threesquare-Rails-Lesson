@@ -1,3 +1,8 @@
-<h1>Show Page</h1>
-
-<%= @location.name %>
+<h1><%= @location.name %></h1>
+<br>
+<p>
+	<%= @location.review %>
+</p>
+<img src="<%= @location.picture_url %>">
+<br>
+<%= link_to "HOME", root_url %>
